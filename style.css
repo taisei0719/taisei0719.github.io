@@ -38,3 +38,18 @@ a {
   color: #007acc;
   text-decoration: none;
 }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-header .tagline {
+  margin-bottom: 0;
+}
