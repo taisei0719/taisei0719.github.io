@@ -30,17 +30,21 @@
         <h2>研究</h2>
         <p class="tagline">Research</p>
       </div>
-      <h3>3D Pose Normalization for Lip Reading</h3>
-
+      <h3>研究概要</h3>
       <p>
-        卒業研究として、
+        卒業研究として、機械読唇のための3D姿勢正規化手法について研究を行った。
+        発話時の口元の画像を用いて機械学習を行い、テキストに変換する機械読唇という技術において、
+        従来は正面から撮影された実写の口元の画像をデータセットとして使用していたが、
+        実運用時の顔の角度変化に対応できないという課題があった。そこで入力として
+        姿勢を正面に補正した顔の3Dモデルを用いることで、様々な角度からの入力に対しても
+        ロバストな機械読唇を実現する手法を提案した。
       </p>
 
-      <p>
-        Designed a 3D-based preprocessing pipeline to improve robustness
-        against camera angle variation.
-      </p>
+      <div class="image-row">
+        <img src="results/proposed_method.png" width="250">
+      </div>
 
+      <h3>使用技術</h3>
       <ul>
         <li>3D Reconstruction using DECA</li>
         <li>FLAME parameter manipulation</li>
@@ -48,10 +52,7 @@
         <li>CER-based quantitative evaluation</li>
       </ul>
 
-      <div class="image-row">
-        <img src="results/sample.png" width="250">
-        <img src="results/sample.png" width="250">
-      </div>
+
 
       <!-- <p>
         <a href="https://github.com/yourgithub/3d-pose-normalization-lipreading">
@@ -66,11 +67,22 @@
         <p class="tagline">Skills</p>
       </div>
       <ul>
-        <li>Python / PyTorch</li>
-        <li>C++ / OpenCV</li>
-        <li>3D Morphable Models (FLAME)</li>
-        <li>Deep Learning</li>
+        <li>Python : 研究で使用</li>
+        <li>C++ : 授業レベル</li>
+        <li>TypeScript : プロジェクトで使用</li>
       </ul>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>個人製作物</h2>
+        <p class="tagline">Projects</p>
+      </div>
+      <h3>BestShift(製作中)</h3>
+      <p>
+        シフトの提出からシフト表の作成までを自動化するWebアプリケーション。
+      </p>
+
     </section>
 
     <section>
