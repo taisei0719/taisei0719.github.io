@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>BestShift | プロジェクト詳細</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav style="margin-bottom: 20px;">
+        <a href="../" style="text-decoration: none; color: #666;">← Homeに戻る</a>
+    </nav>
+
+    <h1>BestShift</h1>
+    <p class="tagline">Automatic Shift Management System</p>
+
+    <section>
+      <div class="section-header">
+        <h2>プロジェクト概要</h2>
+        <p class="tagline">Overview</p>
+      </div>
+      <p>
+        アルバイトスタッフのシフト提出から、管理者のシフト表作成までをワンストップで自動化・効率化するWebアプリケーションです。
+        現在は開発の初期フェーズとして、バックエンドの基盤構築およびデータベース設計を中心に進めています。
+      </p>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>開発の背景</h2>
+        <p class="tagline">Motivation</p>
+      </div>
+      <p>
+        多くの店舗で行われている「手書きやSNSでのシフト回収」「表計算ソフトへの手入力」というアナログな工程を自動化し、
+        ヒューマンエラーの削減と管理コストの大幅な短縮を目指しています。
+      </p>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>技術スタック・開発環境</h2>
+        <p class="tagline">Tech Stack</p>
+      </div>
+      <h3>バックエンド</h3>
+      <ul>
+        <li>Python / Flask</li>
+        <li>Flask-SQLAlchemy (ORM)</li>
+        <li>SQLite (開発用DB)</li>
+      </ul>
+      <h3>フロントエンド</h3>
+      <ul>
+        <li>TypeScript</li>
+        <li>HTML5 / CSS3</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>現在の進捗</h2>
+        <p class="tagline">Current Status</p>
+      </div>
+      <ul>
+        <li><strong>データベース設計:</strong> Shop, User, Shiftモデルの実装とリレーションの定義が完了。</li>
+        <li><strong>初期化スクリプト:</strong> 店舗コードの自動生成およびテストユーザーの自動登録機能を実装。</li>
+        <li><strong>UI設計:</strong> モバイルファーストなシフト提出画面のプロトタイプを作成中。</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>今後の展望</h2>
+        <p class="tagline">Future Work</p>
+      </div>
+      <p>
+        今後は、独自のアルゴリズムを用いた「希望シフトに基づく自動割当機能」の実装を予定しています。
+        また、バックエンドをPostgreSQLへ移行し、スケーラビリティを確保したマルチテナント対応を進める計画です。
+      </p>
+    </section>
+
+  </div>
+
+</body>
+</html>
