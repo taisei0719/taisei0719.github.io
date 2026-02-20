@@ -19,9 +19,9 @@
         <p class="tagline">About</p>
       </div>
       <p>
-        大阪大学工学部電子情報工学科学部4年生(2026年2月現在)。大阪大学情報科学研究科 情報システム工学専攻に進学予定。
+        大阪大学工学部電子情報工学科学科4年生(2026年2月現在)。大阪大学情報科学研究科 情報システム工学専攻に進学予定。
         学部ではコンピュータビジョンおよび深層学習を中心に研究を行い、
-        特に3次元顔再構築と姿勢正規化を用いた視覚認識のロバスト化に取り組んだ。
+        特に3次元顔再構築と姿勢正規化を用いた視覚認識のロバスト化に取り組みました。
       </p>
     </section>
 
@@ -32,12 +32,12 @@
       </div>
       <h3>研究概要</h3>
       <p>
-        卒業研究として、機械読唇のための3D姿勢正規化手法について研究を行った。
+        卒業研究として、機械読唇のための3D姿勢正規化手法について研究を行いました。
         発話時の口元の画像を用いて機械学習を行い、テキストに変換する機械読唇という技術において、
-        従来は正面から撮影された実写の口元の画像をデータセットとして使用していたが、
-        実運用時の顔の角度変化に対応できないという課題があった。そこで入力として
+        従来は正面から撮影された実写の口元の画像をデータセットとして使用していましたが、
+        実運用時の顔の角度変化に対応できないという課題がありました。そこで入力として
         姿勢を正面に補正した顔の3Dモデルを用いることで、様々な角度からの入力に対しても
-        ロバストな機械読唇を実現する手法を提案した。
+        ロバストな機械読唇を実現する手法を提案しました。
       </p>
 
       <div class="image-row">
@@ -57,10 +57,15 @@
       <ul>
         <li>DECA[1] : 3Dモデリングシステム</li>
         <li>LipNet[2] : 機械読唇システム</li>
-        <li>Frontal rendering pipeline</li>
-        <li>CER-based quantitative evaluation</li>
+        <li>Flame[3] : DECAでの顔のパラメータ推定に使用</li>
       </ul>
 
+      <h3>使用ライブラリ</h3>
+      <ul>
+        <li>DECA[1] : 3Dモデリングシステム</li>
+        <li>LipNet[2] : 機械読唇システム</li>
+        <li>Flame[3] : DECAでの顔のパラメータ推定に使用</li>
+      </ul>
 
 
       <!-- <p>
@@ -89,7 +94,8 @@
       </div>
       <h3>BestShift(製作中)</h3>
       <p>
-        シフトの提出からシフト表の作成までを自動化するWebアプリケーション。
+        シフトの提出からシフト表の作成までを自動化するWebアプリケーションを個人で製作中です。
+        詳しい内容は以下のリンクからご覧いただけます。
       </p>
       <a href="https://taisei0719.github.io/BestShift/" target="_blank">
         BestShiftについて
@@ -108,10 +114,11 @@
     <section>
       <div class="section-header">
         <h2>参考文献</h2>
-        <p class="tagline">Citation</p>
+        <p class="tagline">References</p>
       </div>
-      <p>[1] Y. Feng, H. Feng, M.J. Black, and T. Bolkart, “Learning an animatable detailed 3d facemodel from in-the-wild images,”</p>
+      <p>[1] Y. Feng, H. Feng, M.J. Black, and T. Bolkart, “Learning an animatable detailed 3d facemodel from in-the-wild images”</p>
       <p>[2] Y. Assael, B. Shillingford, S. Whiteson and N. de Freitas “LIPNET: END-TO-END SENTENCE-LEVEL LIPREADING”</p>
+      <p>[3] T. Li, T. Bolkart, M.J. Black, H. Li, and J. Romero, “Learning a model of facial shape and expression from 4D scans”</p>
     </section>
 
   </div>
