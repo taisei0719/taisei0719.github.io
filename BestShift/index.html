@@ -76,6 +76,14 @@
 
     <section>
       <div class="section-header">
+        <h2>画面遷移図</h2>
+        <p class="tagline">Screen transition diagram</p>
+      </div>
+      <img src="image/screen_transition.png" class="zoomable">
+    </section>
+
+    <section>
+      <div class="section-header">
         <h2>現在の進捗</h2>
         <p class="tagline">Current Status</p>
       </div>
@@ -98,6 +106,28 @@
     </section>
 
   </div>
+
+  <div id="lightbox">
+    <img id="lightbox-img">
+  </div>
+
+  <script>
+  const images = document.querySelectorAll('.zoomable');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    })
+  });
+  
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none'
+  });
+  </script>
+
 
 </body>
 </html>
