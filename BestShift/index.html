@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -10,99 +11,164 @@
 
   <div class="container">
 
-    <nav style="margin-bottom: 20px;">
-        <a href="../" style="text-decoration: none; color: #666;">← Portfolioに戻る</a>
-    </nav>
+```
+<nav style="margin-bottom: 20px;">
+    <a href="../" style="text-decoration: none; color: #666;">← Portfolioに戻る</a>
+</nav>
 
-    <h1>BestShift</h1>
-    <p class="tagline">Automatic Shift Management System</p>
-    <a href="https://github.com/taisei0719/shift-app" target="_blank" style="display:block; margin-top:10px;">
-      View GitHub Repository →
-    </a>
-    
-    <a href="https://shift-app-iota.vercel.app" target="_blank" style="display:block; margin-top:10px; padding:10px 20px; background:#007acc; color:white; border-radius:5px; width:fit-content;">
-      デモを見る
-    </a>
-    
+<h1>BestShift</h1>
+<p class="tagline">Automatic Shift Management System</p>
 
-    <section>
-      <div class="section-header">
-        <h2>プロジェクト概要</h2>
-        <p class="tagline">Overview</p>
-      </div>
-      <p>
-        アルバイトスタッフのシフト提出から、管理者のシフト表作成までを自動化・効率化するWebアプリケーションです。
-        現在は開発の初期フェーズとして、バックエンドの基盤構築およびデータベース設計を中心に進めています。
-        最終的には給料計算や人件費計算、求人などの機能も搭載したいと考えています。
-      </p>
-    </section>
+<div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap;">
+  <a href="https://github.com/taisei0719/shift-app" target="_blank"
+    style="display:inline-block; padding:10px 20px; background:#333; color:white; border-radius:5px; text-decoration:none;">
+    GitHub Repository →
+  </a>
+  <a href="https://shift-app-iota.vercel.app" target="_blank"
+    style="display:inline-block; padding:10px 20px; background:#007acc; color:white; border-radius:5px; text-decoration:none;">
+    デモを見る →
+  </a>
+</div>
 
-    <section>
-      <div class="section-header">
-        <h2>開発の背景</h2>
-        <p class="tagline">Motivation</p>
-      </div>
-      <p>
-        自分はアルバイトとして飲食店で働いており、シフトを作成するのに多くの時間と労力がかかっていることがわかりました。
-        多くの店舗で行われている手書きやSNSでのシフト回収や表計算ソフトへの手入力というアナログな工程を自動化し、
-        ヒューマンエラーの削減と作業時間の大幅な短縮を目指しています。また、Webアプリケーション開発やモバイルアプリ開発に興味があり、
-        独学で勉強するためにこのアプリケーションを制作しています。
-      </p>
-    </section>
+<section>
+  <div class="section-header">
+    <h2>プロジェクト概要</h2>
+    <p class="tagline">Overview</p>
+  </div>
+  <p>
+    飲食店でのアルバイト経験から着想を得た、シフト希望の提出から自動調整・確定までを一気通貫で行うフルスタックWebアプリケーションです。
+    スタッフはカレンダーUIからシフト希望を提出し、管理者はガントチャートUIでシフトを視覚的に調整・確定できます。
+    また独自の自動調整アルゴリズムにより、スタッフの優先度と累積棄却率を考慮した公平なシフト割り当てを実現しています。
+    最終的には給料計算や人件費管理、求人機能なども搭載したいと考えています。
+  </p>
+  <p style="margin-top: 8px; font-size: 0.9em; color: #888;">
+    ※ バックエンドはRenderの無料プランで稼働しているため、初回アクセス時に起動まで数十秒かかる場合があります。
+  </p>
+</section>
 
-    <section>
-      <div class="section-header">
-        <h2>技術スタック</h2>
-        <p class="tagline">Tech Stack</p>
-      </div>
-      <h3>フロントエンド</h3>
-      <ul>
-        <li>Framework: Next.js (App Router)</li>
-        <li>Language: TypeScript</li>
-        <li>Styling: Tailwind CSS</li>
-        <li>State Management: React Context API</li>
-        <li>HTTP Client: Axios</li>
-      </ul>
-      <h3>バックエンド</h3>
-      <ul>
-        <li>Framework: Flask (Python)</li>
-        <li>Database: SQLite (開発時)</li>
-        <li>Database: PostgleSQL (実運用時)</li>
-        <li>Auth: Flask-JWT-Extended</li>
-        <li>Web Server: Gunicorn</li>
-      </ul>
-       <h3>モバイル</h3>
-      <ul>
-        <li>Framework: Flutter</li>
-        <li>Language: Dart</li>
-      </ul>
-       <h3>インフラ・運用</h3>
-      <ul>
-        <li>Frontend Hosting: Vercel</li>
-        <li>Backend Hosting: Render</li>
-        <li>Database Hosting: Render (PostgreSQL)</li>
-        <li>Container: Docker / Docker Compose</li>
-      </ul>
-    </section>
+<section>
+  <div class="section-header">
+    <h2>開発の背景</h2>
+    <p class="tagline">Motivation</p>
+  </div>
+  <p>
+    飲食店のアルバイトとして働く中で、店長・オーナーがシフト調整に多くの時間と労力を費やしていることを目の当たりにしました。
+    手書きやSNSでのシフト回収、表計算ソフトへの手入力といったアナログな工程を自動化することで、
+    ヒューマンエラーの削減と作業時間の大幅な短縮を目指しています。
+    また、Webアプリケーション・モバイルアプリ開発への興味から、独学でこのアプリケーションを制作しています。
+  </p>
+</section>
 
-    <section>
-      <div class="section-header">
-        <h2>画面遷移図</h2>
-        <p class="tagline">Screen transition diagram</p>
-      </div>
-      <p>クリックして拡大できます</p>
-      <img src="image/screen_transition1_v2.png" width="750" class="zoomable">
-      <img src="image/screen_transition2.png" width="750" class="zoomable">
-    </section>
+<section>
+  <div class="section-header">
+    <h2>主な機能</h2>
+    <p class="tagline">Features</p>
+  </div>
 
-    <section>
+  <h3>スタッフ向け</h3>
+  <ul>
+    <li><strong>シフト希望提出:</strong> カレンダーUIから直感的にシフト希望を提出・修正</li>
+    <li><strong>確定シフト確認:</strong> 月次サマリーで確定シフト・合計労働時間を一覧表示</li>
+    <li><strong>店舗参加:</strong> 店舗コードを入力してオーナーに参加リクエストを送信</li>
+  </ul>
+
+  <h3>管理者(オーナー)向け</h3>
+  <ul>
+    <li><strong>シフト状況カレンダー:</strong> 月単位で各日の希望提出状況を色分け表示（確定済 / 未確定 / 希望なし）</li>
+    <li><strong>シフト調整・確定:</strong> ガントチャートUIでスタッフのシフトを視覚的に調整・確定</li>
+    <li><strong>シフト自動調整:</strong> 時間帯別定員・スタッフ優先度・累積棄却率を考慮した自動割り当て</li>
+    <li><strong>棄却履歴管理:</strong> スタッフごとの希望採用率を記録し、長期的な公平性を担保</li>
+    <li><strong>参加リクエスト管理:</strong> スタッフの店舗参加リクエストを承認/拒否</li>
+  </ul>
+</section>
+
+<section>
+  <div class="section-header">
+    <h2>技術的な工夫点</h2>
+    <p class="tagline">Technical Highlights</p>
+  </div>
+
+  <h3>自動調整アルゴリズム</h3>
+  <p>
+    単純な優先度順ではなく、<strong>累積棄却率</strong>を考慮した貪欲法を実装しています。
+    優先度が同じスタッフ間では「過去に多く棄却されたスタッフ」を優先することで、
+    長期的なシフト割り当ての公平性を担保しています。
+  </p>
+  <ul>
+    <li>ソート基準① : 優先度（高い順）</li>
+    <li>ソート基準② : 同優先度内 → 累積棄却率（高い順）</li>
+    <li>ソート基準③ : 同棄却率 → ランダム（毎回同じ人が有利にならないように）</li>
+  </ul>
+
+  <h3>JWT認証のマルチプラットフォーム対応</h3>
+  <p>
+    モバイルアプリ（Authorizationヘッダー）とWebアプリ（Cookie）の両方に対応するため、
+    <code>JWT_TOKEN_LOCATION = ["headers", "cookies"]</code> を設定し、
+    同一バックエンドAPIをどちらからでも利用できる構成にしています。
+  </p>
+
+  <h3>ガントチャートUIによるシフト調整</h3>
+  <p>
+    管理者向けのシフト調整画面では、各スタッフの希望シフトと調整後のシフトをガントチャートで視覚的に比較しながら
+    ドロップダウンで時間を調整できるUIを実装しています。
+  </p>
+</section>
+
+<section>
+  <div class="section-header">
+    <h2>技術スタック</h2>
+    <p class="tagline">Tech Stack</p>
+  </div>
+  <h3>フロントエンド</h3>
+  <ul>
+    <li>Framework: Next.js 15 (App Router)</li>
+    <li>Language: TypeScript</li>
+    <li>Styling: Tailwind CSS v4</li>
+    <li>State Management: React Context API</li>
+    <li>HTTP Client: Axios</li>
+    <li>日付処理: date-fns</li>
+  </ul>
+  <h3>バックエンド</h3>
+  <ul>
+    <li>Framework: Flask (Python)</li>
+    <li>Auth: Flask-JWT-Extended</li>
+    <li>ORM: SQLAlchemy</li>
+    <li>Database: PostgreSQL (本番) / SQLite (開発)</li>
+    <li>Web Server: Gunicorn</li>
+  </ul>
+  <h3>モバイル (開発中)</h3>
+  <ul>
+    <li>Framework: Flutter</li>
+    <li>Language: Dart</li>
+    <li>状態管理: Riverpod</li>
+    <li>ルーティング: go_router</li>
+    <li>HTTP Client: Dio</li>
+  </ul>
+  <h3>インフラ・運用</h3>
+  <ul>
+    <li>Frontend Hosting: Vercel</li>
+    <li>Backend Hosting: Render</li>
+    <li>Database Hosting: Render (PostgreSQL)</li>
+    <li>Container: Docker / Docker Compose</li>
+  </ul>
+</section>
+
+<section>
+  <div class="section-header">
+    <h2>画面遷移図</h2>
+    <p class="tagline">Screen Transition Diagram</p>
+  </div>
+  <p>クリックして拡大できます</p>
+  <img src="image/screen_transition1_v2.png" width="750" class="zoomable">
+  <img src="image/screen_transition2.png" width="750" class="zoomable">
+</section>
+
+<section>
   <div class="section-header">
     <h2>テストユーザー</h2>
     <p class="tagline">Test Users</p>
   </div>
-
   <p>以下のテストユーザーでログイン可能です</p>
-
   <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%; text-align: center;">
     <tr>
       <th>ユーザー名</th>
@@ -123,34 +189,36 @@
   </table>
 </section>
 
-    <section>
-      <div class="section-header">
-        <h2>現在の進捗</h2>
-        <p class="tagline">Current Status</p>
-      </div>
-      <ul>
-        <li><strong>データベース設計:</strong> Shop, User, Shiftなどのモデルの実装とリレーションを定義。</li>
-        <li><strong>各種機能の実装:</strong> ログイン, 新規ユーザー登録, シフト提出, アカウント編集, 店舗参加, 従業員一覧, 管理者シフト調整&確定, 新規店舗登録, 店舗参加リクエスト承認/拒否。</li>
-        <li><strong>モバイルアプリ版の開発:</strong> Flutterにてモバイルアプリも開発中。</li>
-        <li><strong>UI設計:</strong> 最低限のUIで開発中。</li>
-      </ul>
-    </section>
+<section>
+  <div class="section-header">
+    <h2>現在の進捗</h2>
+    <p class="tagline">Current Status</p>
+  </div>
+  <ul>
+    <li><strong>データベース設計:</strong> Shop, User, Shift, AutoAdjustConfig, ShiftRejectionHistoryのモデル実装とリレーション定義。</li>
+    <li><strong>認証:</strong> Flask-JWT-ExtendedによるJWT認証。Cookie/Authorizationヘッダー両対応。</li>
+    <li><strong>スタッフ機能:</strong> シフト希望提出・確定シフト確認・月次サマリー・店舗参加リクエスト。</li>
+    <li><strong>管理者機能:</strong> シフト状況カレンダー・ガントチャートによるシフト調整・確定・自動調整・棄却履歴管理・参加リクエスト承認。</li>
+    <li><strong>インフラ:</strong> Docker Composeによるローカル開発環境・Vercel+Renderによる本番デプロイ。</li>
+    <li><strong>モバイルアプリ:</strong> Flutterにて開発中。</li>
+  </ul>
+</section>
 
-    <section>
-      <div class="section-header">
-        <h2>今後の展望</h2>
-        <p class="tagline">Future Work</p>
-      </div>
-      <ul>
-        <li><strong>営業時間と各時間当たりの定員の設定:</strong> 店舗ごとに営業時間および時間帯別の必要人数（ポジション別）を柔軟に設定できる機能の実装。曜日別設定や繁忙期対応も考慮。</li>
-        <li><strong>複数店舗登録:</strong> スタッフ, オーナーともに複数店舗登録への対応</li>
-        <li><strong>シフトの自動確定システムの実装:</strong> シフト希望棄却率やポジションごとの熟達度、優先度などを考慮したアルゴリズムの作成</li>
-        <li><strong>UI設計:</strong>より直感的に操作できるようなUIの開発。</li>
-        <li><strong>モバイルアプリ開発:</strong> FlutterによるAndroid/IOSのアプリ開発。</li>
-        <li><strong>サービス運用:</strong> 本番環境での安定運用を想定し、ログ管理・エラーハンドリング・バックアップ体制の整備。将来的なスケールを見据えた設計の検討。</li>
-        <li><strong>セキュリティ強化:</strong>実運用に向けてセキュリティの強化が必要</li>
-      </ul>
-    </section>
+<section>
+  <div class="section-header">
+    <h2>今後の展望</h2>
+    <p class="tagline">Future Work</p>
+  </div>
+  <ul>
+    <li><strong>モバイルアプリ完成:</strong> FlutterによるAndroid/iOSアプリの完成。</li>
+    <li><strong>ポジション別定員設定:</strong> 時間帯・ポジション別の必要人数を柔軟に設定できる機能。</li>
+    <li><strong>給与計算・人件費管理:</strong> 確定シフトをもとにした給与・人件費の自動計算。</li>
+    <li><strong>プッシュ通知:</strong> シフト確定時のスタッフへの通知機能。</li>
+    <li><strong>複数店舗対応:</strong> スタッフ・オーナーともに複数店舗への所属対応。</li>
+    <li><strong>セキュリティ強化:</strong> 実運用に向けたCSRF対策・レート制限・ログ管理の整備。</li>
+  </ul>
+</section>
+```
 
   </div>
 
@@ -174,7 +242,6 @@
     lightbox.style.display = 'none'
   });
   </script>
-
 
 </body>
 </html>
